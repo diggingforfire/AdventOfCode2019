@@ -7,6 +7,10 @@ namespace _03._02
 {
     class Program
     {
+        /// <summary>
+        /// https://adventofcode.com/2019/day/3#part2
+        /// 
+        /// </summary>
         static void Main()
         {
             var wires =
