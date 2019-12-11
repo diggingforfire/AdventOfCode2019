@@ -9,7 +9,8 @@ namespace _03._01
     {
         /// <summary>
         /// https://adventofcode.com/2019/day/3
-        /// 
+        /// Grids and coordinates again. Considered storing just the line data and calculating intersections on those.
+        /// Ended up storing all points and intersecting those, which makes calculating the Manhattan distance really simple.
         /// </summary>
         static void Main()
         {

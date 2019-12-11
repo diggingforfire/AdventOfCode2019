@@ -9,7 +9,8 @@ namespace _03._02
     {
         /// <summary>
         /// https://adventofcode.com/2019/day/3#part2
-        /// 
+        /// Simple addition to part 1.
+        /// Instead of calculating the Manhattan distance, count the amount of steps.
         /// </summary>
         static void Main()
         {

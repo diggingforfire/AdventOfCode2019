@@ -7,7 +7,7 @@ namespace _02._01
     {
         /// <summary>
         /// https://adventofcode.com/2019/day/2
-        /// Pretty straightfoward. Lots of indexing. I like these 'build your own processor' type of puzzles.
+        /// Pretty straightforward. Lots of indexing. I like these 'build your own processor' type of puzzles.
         /// </summary>
         static void Main()
         {
