@@ -7,14 +7,6 @@ class Point:
         self.y = y
 
 
-with open('input.txt', encoding='utf-8-sig') as file:
-    points = [Point(x, y)
-              for y, line in enumerate(file.readlines())
-              for x, char in enumerate(list(line.rstrip()))
-              if char == '#'
-              ]
-
-
 def get_manhattan_distance(point, other_point):
     return abs(point.x - other_point.x) + abs(point.y - other_point.y)
 
@@ -28,6 +20,14 @@ def has_line_of_sight(point, other_point, points):
         atan2(point.y - p.y, point.x - p.x) == angle and
         get_manhattan_distance(point, p) < get_manhattan_distance(point, other_point)
         for p in points)
+
+
+with open('input.txt', encoding='utf-8-sig') as file:
+    points = [Point(x, y)
+              for y, line in enumerate(file.readlines())
+              for x, char in enumerate(list(line.rstrip()))
+              if char == '#'
+              ]
 
 
 result = map(lambda point: sum(
